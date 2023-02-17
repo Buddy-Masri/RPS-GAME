@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,29 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
- <script src="script.js"></script>   
+    <div id="container">
+        <button id="button-1" value="Rock" onclick="fx()" class="image-container">✊</button>
+        <button id="button-2" value="Paper" onclick="fx2()" class="image-container">🤚</button>
+        <button id="button-3" value="Scissors" onclick="fx3()" class="image-container">✌️</button>
+    </div>
+    <div id="bottom-section">
+        <div id="result-box"></div>
+        <div id="result2-box"></div>
+        <div id="score-box"></div>
+        <div id="clear-container">
+            <button onclick="fx4()" id="clear-button">clear</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
