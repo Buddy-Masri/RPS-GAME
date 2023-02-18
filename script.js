@@ -61,6 +61,4 @@ let fx4 = () =>{
   a.innerHTML=''
   c.innerHTML=''
   b.innerHTML=''
-}
-
-
+};
