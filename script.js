@@ -25,11 +25,11 @@ d.forEach(click=>click.onclick=(myScore, computerScore)=>{
   b.innerHTML = `💁🏻‍♂️ : ${myScore} vs 🤖 : ${computerScore}`
   if (computerScore=='Paper'){
     subtScore()
-  }
-  else if (computerScore=='Scissors'){
+  } else if (computerScore=='Scissors'){
     addScore()
-  }
-  else {draw()}  
+  }else {
+    draw()
+  }  
   })
   
 let fx4 = () =>{
