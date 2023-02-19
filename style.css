@@ -19,8 +19,6 @@ body {
   object-fit: contain;
   transition: 0.125s;
   font-size: 50px;
-  
-
 }
 
 .image-container:hover {
