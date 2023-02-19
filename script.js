@@ -40,6 +40,7 @@ let fx4 = () =>{
   score = 0
   a.innerHTML=''
   c.innerHTML=''
+  b.innerHTML=''
 };
 
 
