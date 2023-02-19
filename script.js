@@ -19,26 +19,28 @@ c.innerHTML='Its a Draw'
 
 d.forEach(click=>click.onclick=(myScore, computerScore)=>{
   let array = ["Rock","Paper","Scissors"]
-  let i = Math.floor(Math.random() * array.length)
+  let i = Math.floor(Math.random() * 3)
   myScore = click.value
   computerScore = array[i]
   b.innerHTML = `💁🏻‍♂️ : ${myScore} vs 🤖 : ${computerScore}`
-  if (computerScore=='Paper'){
-    subtScore()
-  } else if (computerScore=='Scissors'){
-    addScore()
-  }else {
+  if (myScore == computerScore){
     draw()
-  }  
+  } else if (myScore=='Rock' && computerScore=='Scissors'){
+    addScore()
+  } else if (myScore=='Paper' && computerScore=='Rock'){
+    addScore()
+  } else if (myScore=='Scissors' && computerScore=='Paper'){
+    addScore()
+  } else{
+    subtScore()
+  }
   })
   
 let fx4 = () =>{
   score = 0
   a.innerHTML=''
   c.innerHTML=''
-  b.innerHTML=''
 };
-
 
 
 
